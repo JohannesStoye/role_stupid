@@ -1,2 +1,7 @@
 ---
 # tasks file for stupid
+- name: Create a useless file
+  ansible.builtin.copy:
+    dest: /tmp/useless.txt
+    content: "this is stupid"
+    mode: "0644"
